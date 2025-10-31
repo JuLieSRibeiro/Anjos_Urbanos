@@ -1,0 +1,27 @@
+/* src/Paginas/PaginaInicial.css */
+
+/* Define o layout principal com 3 colunas */
+.main-content {
+  display: flex;
+  justify-content: center; /* Centraliza as colunas */
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px; /* Limita a largura total */
+  margin: 0 auto; /* Centraliza na página */
+}
+
+/* Coluna Central (Feed) - Ocupa mais espaço */
+.coluna-central {
+  flex: 2; /* Faz ela ser 2x maior que as outras */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 650px; /* Largura do seu PostList */
+}
+
+/* Colunas Laterais - Tamanho fixo */
+.coluna-esquerda,
+.coluna-direita {
+  flex: 1;
+  max-width: 280px; /* Largura do seu ProfileCard/Filter */
+}

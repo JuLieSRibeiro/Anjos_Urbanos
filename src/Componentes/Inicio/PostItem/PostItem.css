@@ -1,0 +1,214 @@
+/* 
+.post {
+  background-color:  #f8fffa;
+  border: 1px solid;
+  border: 1px solid #f8fffa;
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(43, 212, 100, 0.089); 
+  padding: 15px;
+  display: column; 
+  box-sizing: border-box; 
+}
+
+.post h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.post p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.post-button button{
+  background-color: #70eb78;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.post button:hover {
+  background-color: #88c590;
+}
+
+.tags{
+  color: #757575;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.post tags:hover {
+  background-color: black;
+} */
+
+
+
+/* 
+.post-card {
+  background: #d9ecff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 650px;
+  box-sizing: border-box;
+}
+
+TAGS EM CIMA 
+.post-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tag-pill {
+  background: #90caf9;
+  color: #0c3c78;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* CONTEÚDO EM LINHA (imagem + texto) 
+.post-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* IMAGEM/AVATAR 
+.post-avatar {
+  width: 70px;
+  height: 70px;
+  background: #74b9ff;
+  border-radius: 10px;
+}
+
+/* TEXTOS 
+.post-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cidade {
+  margin: 4px 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.mensagem {
+  font-size: 14px;
+  text-align: left;
+}
+
+/* BOTÃO À DIREITA 
+.post-actions {
+  
+  
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-comentar {
+  background: #74b9ff;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+} */
+
+
+.post-card {
+  background: #d9ecff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* TAGS EM CIMA */
+.post-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tag-pill {
+  background: #90caf9;
+  color: #0c3c78;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* FOTO + NOME + CIDADE (lado a lado) */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* FOTO */
+.post-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover; /* ajusta imagem sem distorcer */
+  background: #74b9ff; /* cor de fundo caso não tenha imagem */
+}
+
+/* NOME E CIDADE */
+.post-user-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cidade {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* TEXTO */
+.mensagem {
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+/* BOTÃO */
+.post-actions {
+  text-align: right;
+}
+
+.btn-comentar {
+  background: #74b9ff;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
