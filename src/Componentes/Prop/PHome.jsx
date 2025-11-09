@@ -1,13 +1,11 @@
+
 import React from 'react';
-// Importamos o Link e o useNavigate para a navegação
 import { Link, useNavigate } from 'react-router-dom';
-import './PHome.css'; // Vamos criar este arquivo de estilo
+import './PHome.css'; 
 
 function PHome() {
-  // O useNavigate é ótimo para ações de botões
   const navigate = useNavigate();
 
-  // Função que será chamada ao clicar no botão principal
   const handleComeceAjudar = () => {
     navigate('/login'); 
   };
@@ -17,11 +15,9 @@ function PHome() {
       <header className="home-header">
         <div className="logo">Logo</div>
         <nav>
-          {/* Link para a página de cadastro */}
           <Link to="/cadastro" className="nav-link signup-link">
             sign up
           </Link>
-          {/* Link para a página de login  */}
           <Link to="/login" className="nav-link login-button">
             Login
           </Link>
@@ -29,13 +25,22 @@ function PHome() {
       </header>
 
       <main className="home-main">
-        <h1>Anjos Urbanos conectando quem precisa a quem pode ajudar.</h1>
-        <p>Uma rede de apoio feita para ajudar e receber acolhimento e contruir laços.</p>
         
-        {/* Botão que chama a função de navegação */}
-        <button onClick={handleComeceAjudar} className="cta-button">
-          Comece ajudar!
-        </button>
+        <div className="home-text-content">
+          <h1>Anjos Urbanos conectando quem precisa a quem pode ajudar.</h1>
+          <p>Uma rede de apoio feita para ajudar e receber acolhimento e contruir laços.</p>
+          <button onClick={handleComeceAjudar} className="cta-button">
+            Comece ajudar!
+          </button>
+        </div>
+
+        <div className="home-image-content">
+          <img 
+            src="/PropImgC3.png" 
+            alt="Um pequeno gesto, uma grande mudança" 
+          />
+        </div>
+
       </main>
     </div>
   );
