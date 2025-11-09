@@ -3,19 +3,18 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background-color: #e0f2ff; /* Tom de azul claro da imagem */
-  color: #333; /* Cor de texto padrão */
+  background: radial-gradient(ellipse at center,#f8e6b2, #f8caad, #faacac);
+  color: #333;
 }
 
 .home-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 2rem 4rem; /* Adiciona um espaçamento nas laterais */
+  padding: 2rem 4rem; 
   box-sizing: border-box;
 }
 
-/* --- Header --- */
 .home-header {
   display: flex;
   justify-content: space-between;
@@ -23,57 +22,68 @@ body, html {
   width: 100%;
 }
 
-.logo {
-  background-color: #cce7ff;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #4a5568;
-}
 
 .home-header nav {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Espaço entre os links */
+  gap: 1rem; 
 }
 
 .nav-link {
   text-decoration: none;
   font-weight: 600;
-  border-radius: 8px;
-  padding: 10px 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 0.9rem;
 }
 
 .signup-link {
-  color: #007bff;
+  padding: 8px 18px;
+  border-radius: 5px;
+  white-space: nowrap;
+  background-color: transparent;  
+  color: #f0642e;  
+  border: 2px solid #d95b27; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
 }
 .signup-link:hover {
   text-decoration: underline;
 }
 
 .login-button {
-  background-color: #007bff;
+  padding: 8px 18px; 
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff8c00, #f0642e); 
   color: white;
-}
-.login-button:hover {
-  background-color: #0056b3;
+  border: 2px solid transparent; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
-/* --- Main Content --- */
+.login-button:hover {
+  background-color: #f0642e;
+}
+
 .home-main {
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; /* Alinha o texto à esquerda */
-  max-width: 550px; /* Limita a largura do texto */
-  margin-top: 5vh; /* Empurra o conteúdo um pouco para baixo */
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  align-items: center; 
+  width: 100%;
+  margin-top: 5vh;
 }
 
-.home-main h1 {
+.home-text-content {
+  flex: 1; 
+  max-width: 550px; 
+}
+
+.home-text-content h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -81,15 +91,32 @@ body, html {
   color: #2d3748;
 }
 
-.home-main p {
+.home-text-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   color: #4a5568;
   line-height: 1.5;
 }
 
+/*imagem de propaganda */
+.home-image-content {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-image-content img {
+  max-width: 100%;
+  width: 470px; 
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+
 .cta-button {
-  background-color: #007bff;
+  background: linear-gradient(to right, #ff8c00, #f0642e); 
   color: white;
   border: none;
   border-radius: 8px;
@@ -101,5 +128,5 @@ body, html {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to right, #f0642e, #e0501e);
 }
