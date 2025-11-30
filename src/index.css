@@ -1,0 +1,21 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* * NOSSAS NOVAS REGRAS GLOBAIS
+   * Isto vai remover o gradiente rosa/pêssego
+  */
+  background-color: #FBF9F7;  /* O fundo Creme-Suave */
+  color: #4A3F3B;           /* O texto Marrom-Escuro */
+}
+
+/* Reseta outros estilos que possam estar no seu CSS antigo */
+* {
+  box-sizing: border-box;
+}

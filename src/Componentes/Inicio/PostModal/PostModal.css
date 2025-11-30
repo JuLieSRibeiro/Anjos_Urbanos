@@ -1,0 +1,111 @@
+/* PostModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  
+  /* Novo design flutuante */
+  border-radius: 8px; /* Arredondado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #4A3F3B; 
+}
+
+.modal-close-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-body .form-group {
+  margin-bottom: 15px;
+}
+
+.modal-body label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #4A3F3B; 
+}
+
+.type-options {
+  display: flex;
+  gap: 15px;
+}
+.type-options label {
+  font-weight: 400;
+}
+
+.modal-body textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border: 1px solid #EAEAEA;
+  background-color: #FBF9F7; 
+  border-radius: 6px; /* Arredondado */
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.modal-body input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #EAEAEA;
+  background-color: #FBF9F7; 
+  border-radius: 6px; /* Arredondado */
+  font-size: 1rem;
+}
+
+.modal-footer {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.modal-publish-button {
+  background-color: #C69C8D; /* Cor Terracota */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Arredondado */
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.modal-publish-button:hover {
+  background-color: #B88E80; 
+}

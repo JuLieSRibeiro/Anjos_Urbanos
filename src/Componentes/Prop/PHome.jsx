@@ -1,3 +1,4 @@
+// src/Componentes/Prop/PHome.jsx
 
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -13,7 +14,16 @@ function PHome() {
   return (
     <div className="home-container">
       <header className="home-header">
-        <div className="logo">Logo</div>
+        
+        {/* === LOGO ATUALIZADA AQUI === */}
+        {/* Substituímos o <div> pela <img> */}
+        <img 
+          src="/logo-anjos-urbanos.png" 
+          alt="Anjos Urbanos" 
+          className="logo-img" 
+        />
+        {/* === FIM DA ATUALIZAÇÃO === */}
+
         <nav>
           <Link to="/cadastro" className="nav-link signup-link">
             sign up

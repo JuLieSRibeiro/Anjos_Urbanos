@@ -1,12 +1,4 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #eaf6ff; 
-}
+/* LoginStyle.css */
 
 .login-container {
   display: flex;
@@ -16,24 +8,27 @@ body {
 }
 
 .login-form {
-  background-color: #ffffff;
+  background-color: #ffffff; 
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   text-align: center;
+  
+  /* Novo design flutuante */
+  border-radius: 8px; /* Arredondado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
 .login-form h2 {
   margin-bottom: 10px;
   font-size: 2.5rem;
-  color: #333;
+  color: #4A3F3B; 
 }
 
 .login-form p {
   margin-bottom: 30px;
-  color: #666;
+  color: #777;
 }
 
 .input-group {
@@ -44,14 +39,15 @@ body {
 .input-group label {
   display: block;
   margin-bottom: 5px;
-  color: #555;
+  color: #4A3F3B; 
 }
 
 .input-group input {
   width: 100%;
   padding: 12px;
-  border: 1px solid #9496a7; 
-  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  background-color: #FBF9F7; 
+  border-radius: 6px; /* Arredondado */
   box-sizing: border-box; 
 }
 
@@ -59,8 +55,8 @@ body {
   width: 100%;
   padding: 12px;
   border: none;
-  border-radius: 5px;
-  background-color: #3fc73a; 
+  border-radius: 6px; /* Arredondado */
+  background-color: #C69C8D; /* Cor Terracota */
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -68,13 +64,13 @@ body {
 }
 
 .login-button:hover {
-  background-color: #3ea843;
+  background-color: #B88E80; 
 }
 
 .forgot-password {
   display: block;
   margin-top: 15px;
-  color: #007bff;
+  color: #C69C8D; 
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -84,15 +80,30 @@ body {
 }
 
 .signup-link {
-    margin-top: 20px;
+    
     font-size: 0.9rem;
 }
 
 .signup-link a {
-    color: #007bff;
+    color: #C69C8D; 
     text-decoration: none;
+    font-weight: 600;
 }
 
 .signup-link a:hover {
     text-decoration: underline;
+}
+
+/* ... (Todo o seu CSS anterior) ... */
+
+/* ADICIONE ISTO NO FINAL */
+.form-error-message {
+  color: #c62828; /* Vermelho escuro */
+  background-color: #ffebee; /* Vermelho claro */
+  border: 1px solid #c62828;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
 }

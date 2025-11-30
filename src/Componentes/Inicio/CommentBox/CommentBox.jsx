@@ -1,14 +1,13 @@
 import React from 'react';
 import './CommentBox.css';
 
-function CommentBox() {
+// função "onOpenModal" tipo um call back
+function CommentBox({ onOpenModal }) {
   return (
-    <div className="comment-box">
-      <div className="user-avatar"></div>
-      <input type="text" placeholder="Escreva seu comentário..." />
-      <button>➤</button>
-      <button>📷</button>
-      <button>🎥</button>
+    //  essa div é a box de comentarios, mas é mais visual por que o que cria mesmo é outro
+    <div className="comment-box-trigger" onClick={onOpenModal}>
+      <div className="user-avatar-placeholder"></div>
+      <span>Comece uma publicação...</span>
     </div>
   );
 }

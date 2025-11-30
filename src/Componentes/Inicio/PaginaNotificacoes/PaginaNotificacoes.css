@@ -1,0 +1,100 @@
+/* PaginaNotificacoes.css */
+
+
+
+/* Container para centralizar o card */
+.notificacoes-container {
+  max-width: 800px; /* Largura máxima para a lista */
+  margin: 30px auto; /* Centraliza com margem do header */
+  padding: 0 20px;
+}
+
+/* O card "flutuante" */
+.notificacoes-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* Garante que os cantos arredondados peguem os itens */
+}
+
+.notificacoes-header {
+  padding: 20px 25px;
+  margin: 0;
+  color: #4A3F3B;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.notificacoes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Um item individual da lista */
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  border-bottom: 1px solid #EAEAEA;
+  transition: background-color 0.2s ease;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background-color: #FBF9F7; /* Fundo creme */
+}
+
+/* Estilo para itens "não lidos" */
+.notification-item.unread {
+  background-color: #F8F0EE; /* Fundo terracota claro */
+}
+
+.notification-item.unread:hover {
+  background-color: #F4E8E4; /* Um pouco mais escuro no hover */
+}
+
+/* Ícones (placeholders de cor) */
+.notification-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 15px;
+  /* (Idealmente, aqui iriam ícones de "comentário", "mensagem") */
+}
+.icon-message {
+  background-color: #C69C8D; /* Terracota */
+}
+.icon-comment, .icon-reply {
+  background-color: #B3D1C8; /* Menta */
+}
+
+/* Conteúdo do meio */
+.notification-content {
+  flex-grow: 1;
+}
+
+.notification-text {
+  margin: 0 0 5px 0;
+  color: #4A3F3B;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.notification-time {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Bolinha azul de "não lido" */
+.notification-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1e90ff; /* Um azul para destacar que é novo */
+  margin-left: 15px;
+  flex-shrink: 0;
+}

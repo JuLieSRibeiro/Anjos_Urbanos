@@ -1,42 +1,100 @@
+
+
 .filter {
-  background-color: #6fa0d2;
+  background-color: #ffffff; 
   padding: 20px;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 250px;
+  gap: 15px;
   width: 210px;
-  justify-content: space-around;
-  box-shadow: 0 1px 4px rgba(43, 212, 100, 0.089); 
-
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
+  border: none; 
 }
 
 .filter h3 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   font-size: 18px;
-  color: #333;
+  color: #4A3F3B; 
   font-family: 'Montserrat', sans-serif;
 }
+
+
+.filter-mode-selector {
+  display: flex;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mode-button {
+  flex: 1;
+  padding: 8px 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: #ffffff;
+  color: #777;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mode-button:first-child {
+  border-right: 1px solid #EAEAEA;
+}
+
+
+.mode-button.active {
+  background-color: #F8F0EE; 
+  color: #C69C8D; 
+}
+
 
 .filter input {
-  border: 1px solid #f8fffa;
-  padding: 8px;
-  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background-color: #FBF9F7; 
+  padding: 10px;
+  border-radius: 6px; 
   outline: none;
   font-family: 'Montserrat', sans-serif;
+  color: #4A3F3B;
 }
 
-.filter button {
-  background-color: #70eb78;
-  color: white;
-  border: none;
-  border-radius: 8px;
+
+.filter-button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.filter-clear-button {
+  flex: 1;
+  background: transparent;
+  color: #777;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px; 
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
-.filter button:hover {
-  background-color: #88c590;
+.filter-clear-button:hover {
+  background-color: #FBF9F7;
+}
+
+.filter-submit-button {
+  flex: 1;
+  background-color: #C69C8D; 
+  color: white;
+  border: none;
+  border-radius: 6px; 
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.filter-submit-button:hover {
+  background-color: #B88E80; 
 }

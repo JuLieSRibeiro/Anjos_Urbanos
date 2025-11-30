@@ -1,27 +1,51 @@
 import React from 'react';
 import './Header.css';
+import { Link, useNavigate }
+from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();//nesse trabalho a gnt tá usando link para navegação e usenavegate pra logout
+
+  const handleLogout = () => {
+    console.log("Usuário deslogado.");
+    navigate('/'); 
+  };
+
   return (
     <header className="header">
-
-      <a href="/inicio" className="logo-link">
+      
+    
+      <Link to="/feed" className="header-logo-link">
         <img 
-          src="https://i.pinimg.com/1200x/b7/5b/29/b75b29441bbd967deda4365441497221.jpg"  // só imagem dexemplo
-          alt="Logo do Anjos Urbanos" 
+          src="/logo-anjos-urbanos.png" 
+          alt="Logo Anjos Urbanos" 
           className="header-logo"
         />
-      </a>
+      </Link>
+      
 
-      <input type="text" placeholder="Pesquisar sobre..." className="search-bar" />
-      <nav>
-        <a href="/inicio">INÍCIO</a>
-        <a href="/Mensagem">MENSAGENS</a>
-        <a href="/Notificações">NOTIFICAÇÕES</a>
+      <nav className="header-nav">
+        
+        <Link to="/feed" className="nav-link">
+          Feed
+        </Link>
+        <Link to="/mensagens" className="nav-link">
+          Mensagens
+        </Link>
+        <Link to="/notificacoes" className="nav-link">
+          Notificações
+        </Link>
+        <Link to="/perfil" className="nav-link">
+          Perfil
+        </Link>
+        
+        <button onClick={handleLogout} className="nav-button logout-button">
+          Log out
+        </button>
       </nav>
+
     </header>
   );
 }
 
 export default Header;
-

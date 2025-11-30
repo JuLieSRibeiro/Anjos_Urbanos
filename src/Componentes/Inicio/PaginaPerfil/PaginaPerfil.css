@@ -1,0 +1,90 @@
+/* PaginaPerfil.css */
+
+.profile-page-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.profile-page-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  /* overflow: hidden; <-- REMOVIDO! Isso estava causando o bug. */
+}
+
+/* 1. A FOTO DE CAPA */
+.profile-page-cover {
+  height: 250px;
+  width: 100%;
+  background-color: #EAEAEA;
+  background-image: url('https://picsum.photos/seed/cover/1000/300');
+  background-size: cover;
+  background-position: center;
+  /* Arredonda só os cantos de CIMA do card */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* 2. O CABEÇALHO DO PERFIL (Abaixo da capa) */
+.profile-page-header {
+  padding: 20px;
+  position: relative; /* Contexto para o avatar */
+  
+  /* Deixa espaço para o avatar que está à esquerda */
+  padding-left: 200px; 
+  
+  /* Altura mínima para conter o avatar e o texto */
+  min-height: 100px; 
+}
+
+.profile-page-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #ffffff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  /* Posicionamento do avatar */
+  position: absolute;
+  left: 20px;
+  
+  /* Puxa o avatar para CIMA, flutuando sobre a capa */
+  top: -80px; /* Metade da altura (160/2) */
+  
+  background-image: url('https://picsum.photos/seed/marcela/160/160');
+  background-size: cover;
+}
+
+/* O texto do perfil agora está alinhado corretamente */
+.profile-page-header h1 {
+  margin: 0 0 5px 0; /* Remove margin-top */
+  color: #4A3F3B;
+  font-size: 2rem;
+}
+
+.profile-page-header p {
+  margin: 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+/* 3. O CONTEÚDO DO PERFIL (Feed) */
+.profile-page-content {
+  padding: 20px;
+  border-top: 1px solid #EAEAEA;
+}
+
+.profile-page-content h3 {
+  color: #4A3F3B;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* Ajuste para o PostList dentro do perfil */
+.profile-page-content .post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

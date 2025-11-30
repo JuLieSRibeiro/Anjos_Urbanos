@@ -1,0 +1,32 @@
+/* PaginaMensagens.css */
+
+.pagina-mensagens {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Faz a página ocupar a altura inteira da tela */
+}
+
+.chat-container {
+  display: flex;
+  flex-grow: 1; /* Faz o container de chat ocupar o resto da altura */
+  overflow: hidden; /* Impede "scrollbars" duplas */
+  
+  /* Pega o fundo creme do nosso design */
+  background-color: #FBF9F7; 
+}
+
+/* Coluna da Esquerda (Lista de Conversas) */
+.conversation-list-container {
+  flex: 0 0 300px; /* Largura fixa de 300px */
+  border-right: 1px solid #EAEAEA;
+  background-color: #ffffff; /* Fundo branco */
+  overflow-y: auto; /* Permite scroll só nesta coluna */
+}
+
+/* Coluna da Direita (Janela do Chat) */
+.chat-window-container {
+  flex: 1; /* Ocupa todo o resto do espaço */
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9F7; /* Fundo creme */
+}

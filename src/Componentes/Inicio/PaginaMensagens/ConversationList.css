@@ -1,0 +1,67 @@
+/* ConversationList.css */
+
+.conversation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título da coluna */
+.conversation-list-header {
+  padding: 20px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.conversation-list-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #4A3F3B;
+}
+
+/* Item individual da conversa */
+.conversation-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #EAEAEA;
+  transition: background-color 0.2s ease;
+}
+
+.conversation-item:hover {
+  background-color: #FBF9F7; /* Fundo creme suave */
+}
+
+/* Estilo do item quando está selecionado */
+.conversation-item.active {
+  background-color: #F8F0EE; /* Fundo terracota claro */
+  border-right: 3px solid #C69C8D; /* Borda terracota */
+}
+
+.conversation-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #EAEAEA;
+  object-fit: cover;
+}
+
+.conversation-details {
+  overflow: hidden; /* Impede o texto de vazar */
+}
+
+.conversation-name {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4A3F3B;
+}
+
+.conversation-preview {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+}
