@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-
 const commentSchema = new Schema(
   {
     
@@ -24,7 +23,6 @@ const commentSchema = new Schema(
   }
 );
 
-
 const postSchema = new Schema(
   {
     
@@ -37,18 +35,13 @@ const postSchema = new Schema(
     nome: { type: String, required: true },
     avatar: { type: String },
     cidade: { type: String, required: true },
-
-
     mensagem: { type: String, required: true },
     tags: [{ type: String }], 
-
-    
     type: {
       type: String,
       required: true,
       enum: ['pedido', 'oferta'], 
     },
-
  
     comments: [commentSchema], 
   },
@@ -56,6 +49,5 @@ const postSchema = new Schema(
     timestamps: true,
   }
 );
-
 
 module.exports = mongoose.model('Post', postSchema);

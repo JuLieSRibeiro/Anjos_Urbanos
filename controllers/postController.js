@@ -2,14 +2,12 @@ const asyncHandler = require('express-async-handler');
 const Post = require('../models/Post');
 const User = require('../models/User'); 
 
-
 const getAllPosts = asyncHandler(async (req, res) => {
   
   const posts = await Post.find({}).sort({ createdAt: -1 });
 
   res.status(200).json(posts);
 });
-
 
 const createPost = asyncHandler(async (req, res) => {
  
@@ -19,11 +17,9 @@ const createPost = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error('Tipo e mensagem são obrigatórios');
   }
-
   
   const user = req.user;
 
-  
   const post = await Post.create({
     type,
     mensagem,
@@ -36,7 +32,6 @@ const createPost = asyncHandler(async (req, res) => {
 
   res.status(201).json(post); 
 });
-
 
 const addComment = asyncHandler(async (req, res) => {
   
@@ -51,7 +46,6 @@ const addComment = asyncHandler(async (req, res) => {
     throw new Error('O texto do comentário não pode estar vazio');
   }
 
-  
   const post = await Post.findById(postId);
 
   if (post) {
@@ -62,13 +56,10 @@ const addComment = asyncHandler(async (req, res) => {
       nome: user.nome,
       avatar: user.avatar,
     };
-
     
     post.comments.unshift(newComment);
 
-    
     await post.save();
-
     
     res.status(201).json(post);
   } else {
@@ -76,7 +67,6 @@ const addComment = asyncHandler(async (req, res) => {
     throw new Error('Post não encontrado');
   }
 });
-
 
 const toggleLikeOnComment = asyncHandler(async (req, res) => {
   const postId = req.params.id;
@@ -90,14 +80,12 @@ const toggleLikeOnComment = asyncHandler(async (req, res) => {
     throw new Error('Post não encontrado');
   }
 
-  
   const comment = post.comments.id(commentId);
 
   if (!comment) {
     res.status(404);
     throw new Error('Comentário não encontrado');
   }
-
  
   const likeIndex = comment.likes.findIndex(
     (like) => like.user.toString() === userId.toString()
@@ -111,7 +99,6 @@ const toggleLikeOnComment = asyncHandler(async (req, res) => {
     comment.likes.push({ user: userId });
   }
 
-  
   await post.save();
   res.status(200).json(post);
 });

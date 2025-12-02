@@ -3,7 +3,6 @@ const Conversation = require('../models/Conversation');
 const Message = require('../models/Message');
 const User = require('../models/User');
 
-
 const getConversations = asyncHandler(async (req, res) => {
   const loggedInUserId = req.user._id;
   const conversations = await Conversation.find({
@@ -11,7 +10,6 @@ const getConversations = asyncHandler(async (req, res) => {
   }).populate('participants', 'nome avatar');
   res.status(200).json(conversations);
 });
-
 
 const getMessagesForConversation = asyncHandler(async (req, res) => {
   const loggedInUserId = req.user._id;
@@ -51,14 +49,10 @@ const sendMessage = asyncHandler(async (req, res) => {
 
   conversation.messages.push(newMessage._id);
   await conversation.save();
-
   
   const io = req.app.get('io');
 
-  
   io.to(conversation._id.toString()).emit('receiveMessage', newMessage);
-
- 
 
   res.status(201).json(newMessage);
 });

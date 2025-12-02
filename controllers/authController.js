@@ -9,7 +9,6 @@ const generateToken = (id) => {
   });
 };
 
-
 const registerUser = asyncHandler(async (req, res) => {
   
   const { nome, email, senha, cidade } = req.body;
@@ -20,25 +19,21 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new Error('Por favor, adicione todos os campos');
   }
 
-  
   const userExists = await User.findOne({ email });
   if (userExists) {
     res.status(400);
     throw new Error('Usuário já existe');
   }
 
-  
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(senha, salt);
 
-  
   const user = await User.create({
     nome,
     email,
     cidade,
     senha: hashedPassword,
   });
-
   
   if (user) {
     res.status(201).json({
@@ -53,15 +48,12 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
-
 const loginUser = asyncHandler(async (req, res) => {
   
   const { email, senha } = req.body;
-
   
   const user = await User.findOne({ email });
 
-  
   if (user && (await bcrypt.compare(senha, user.senha))) {
     
     res.json({
