@@ -1,32 +1,27 @@
-/* PaginaMensagens.css */
-
 .pagina-mensagens {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Faz a página ocupar a altura inteira da tela */
+  height: 100vh; 
 }
 
 .chat-container {
   display: flex;
-  flex-grow: 1; /* Faz o container de chat ocupar o resto da altura */
-  overflow: hidden; /* Impede "scrollbars" duplas */
-  
-  /* Pega o fundo creme do nosso design */
+  flex-grow: 1; 
+  overflow: hidden;
   background-color: #FBF9F7; 
 }
 
-/* Coluna da Esquerda (Lista de Conversas) */
 .conversation-list-container {
-  flex: 0 0 300px; /* Largura fixa de 300px */
+  flex: 0 0 300px; 
   border-right: 1px solid #EAEAEA;
-  background-color: #ffffff; /* Fundo branco */
-  overflow-y: auto; /* Permite scroll só nesta coluna */
+  background-color: #ffffff; 
+  overflow-y: auto; 
 }
 
-/* Coluna da Direita (Janela do Chat) */
+
 .chat-window-container {
-  flex: 1; /* Ocupa todo o resto do espaço */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  background-color: #FBF9F7; /* Fundo creme */
+  background-color: #FBF9F7; 
 }

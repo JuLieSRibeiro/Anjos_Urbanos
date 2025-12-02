@@ -1,29 +1,27 @@
 import React, { useState } from 'react';
 import './ConversationList.css';
 
-// DADOS ATUALIZADOS COM FOTOS
 const conversationsData = [
   {
     id: 1,
     name: "Roberto Santos",
     preview: "Muito obrigado pela ajuda! Não sei nem...",
-    avatar: "https://picsum.photos/seed/roberto/45/45" // <-- FOTO
+    avatar: "https://picsum.photos/seed/roberto/45/45" 
   },
   {
     id: 2,
     name: "Angela Rodrigues",
     preview: "Sim, por favor! O material escolar é para...",
-    avatar: "https://picsum.photos/seed/angela/45/45" // <-- FOTO
+    avatar: "https://picsum.photos/seed/angela/45/45" 
   },
   {
     id: 3,
     name: "João Pedro",
     preview: "Você pode buscar as roupas amanhã...",
-    avatar: "https://picsum.photos/seed/joao/45/45" // <-- FOTO
+    avatar: "https://picsum.photos/seed/joao/45/45" 
   }
 ];
 
-// Componente "ConversationItem"
 function ConversationItem({ conversation, isActive, onSelect }) {
   return (
     <div 
@@ -39,7 +37,6 @@ function ConversationItem({ conversation, isActive, onSelect }) {
   );
 }
 
-// Componente "ConversationList"
 function ConversationList({ onSelectConversation }) {
   
   const [activeConversationId, setActiveConversationId] = useState(null);

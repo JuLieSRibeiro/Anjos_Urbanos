@@ -5,18 +5,14 @@ import './PostList.css';
 function PostList({ posts }) {
   return (
     <div className="post-list">
-      {posts.map((post) => ( // 1. Removido 'index'
+      {posts.map((post) => ( 
         <PostItem 
-          key={post._id} // 2. Usa o '_id' do banco como 'key' (muito melhor!)
-
-          // 3. Passa o ID do post como uma prop 'postId'
+          key={post._id} 
           postId={post._id} 
-
-          // 4. Passa o resto dos dados (como antes)
           nome={post.nome}
           mensagem={post.mensagem}
           cidade={post.cidade}
-          botao="Comentar" // (O 'botao' agora está fixo)
+          botao="Comentar" 
           tags={post.tags}
           type={post.type}
           comments={post.comments}

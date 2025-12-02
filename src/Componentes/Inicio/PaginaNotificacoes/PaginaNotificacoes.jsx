@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../Header/Header';
 import './PaginaNotificacoes.css';
 
-// Dados de exemplo para as notificações
 const mockNotifications = [
   { 
     id: 1, 
@@ -44,26 +43,20 @@ function PaginaNotificacoes() {
       <Header />
       
       <div className="notificacoes-container">
-        {/* O card "flutuante" */}
         <div className="notificacoes-card">
           
           <h2 className="notificacoes-header">Notificações</h2>
-          
           <div className="notificacoes-list">
             {mockNotifications.map(notif => (
-              // Usamos <a> para simular a navegação
               <a href={notif.link} className={`notification-item ${!notif.isRead ? 'unread' : ''}`} key={notif.id}>
                 
-                {/* Ícone (placeholder) */}
                 <div className={`notification-icon icon-${notif.type}`}></div>
                 
-                {/* Conteúdo (texto e tempo) */}
                 <div className="notification-content">
                   <p className="notification-text">{notif.text}</p>
                   <span className="notification-time">{notif.time}</span>
                 </div>
                 
-                {/* Bolinha de "não lido" */}
                 {!notif.isRead && <div className="notification-dot"></div>}
               </a>
             ))}

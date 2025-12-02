@@ -1,20 +1,15 @@
-/* PaginaNotificacoes.css */
 
-
-
-/* Container para centralizar o card */
 .notificacoes-container {
-  max-width: 800px; /* Largura máxima para a lista */
-  margin: 30px auto; /* Centraliza com margem do header */
+  max-width: 800px; 
+  margin: 30px auto; 
   padding: 0 20px;
 }
 
-/* O card "flutuante" */
 .notificacoes-card {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  overflow: hidden; /* Garante que os cantos arredondados peguem os itens */
+  overflow: hidden; 
 }
 
 .notificacoes-header {
@@ -29,7 +24,6 @@
   flex-direction: column;
 }
 
-/* Um item individual da lista */
 .notification-item {
   display: flex;
   align-items: center;
@@ -44,35 +38,31 @@
 }
 
 .notification-item:hover {
-  background-color: #FBF9F7; /* Fundo creme */
+  background-color: #FBF9F7;
 }
 
-/* Estilo para itens "não lidos" */
 .notification-item.unread {
-  background-color: #F8F0EE; /* Fundo terracota claro */
+  background-color: #F8F0EE; 
 }
 
 .notification-item.unread:hover {
-  background-color: #F4E8E4; /* Um pouco mais escuro no hover */
+  background-color: #F4E8E4; 
 }
 
-/* Ícones (placeholders de cor) */
 .notification-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   flex-shrink: 0;
   margin-right: 15px;
-  /* (Idealmente, aqui iriam ícones de "comentário", "mensagem") */
 }
 .icon-message {
-  background-color: #C69C8D; /* Terracota */
+  background-color: #C69C8D; 
 }
 .icon-comment, .icon-reply {
-  background-color: #B3D1C8; /* Menta */
+  background-color: #B3D1C8; 
 }
 
-/* Conteúdo do meio */
 .notification-content {
   flex-grow: 1;
 }
@@ -89,12 +79,11 @@
   color: #777;
 }
 
-/* Bolinha azul de "não lido" */
 .notification-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #1e90ff; /* Um azul para destacar que é novo */
+  background-color: #1e90ff; 
   margin-left: 15px;
   flex-shrink: 0;
 }

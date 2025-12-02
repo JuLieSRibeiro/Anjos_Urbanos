@@ -1,5 +1,3 @@
-/* LoginStyle.css */
-
 .login-container {
   display: flex;
   justify-content: center;
@@ -13,9 +11,7 @@
   width: 100%;
   max-width: 400px;
   text-align: center;
-  
-  /* Novo design flutuante */
-  border-radius: 8px; /* Arredondado */
+  border-radius: 8px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: none;
 }
@@ -47,7 +43,7 @@
   padding: 12px;
   border: 1px solid #EAEAEA;
   background-color: #FBF9F7; 
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
   box-sizing: border-box; 
 }
 
@@ -55,8 +51,8 @@
   width: 100%;
   padding: 12px;
   border: none;
-  border-radius: 6px; /* Arredondado */
-  background-color: #C69C8D; /* Cor Terracota */
+  border-radius: 6px; 
+  background-color: #C69C8D; 
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -94,12 +90,12 @@
     text-decoration: underline;
 }
 
-/* ... (Todo o seu CSS anterior) ... */
 
-/* ADICIONE ISTO NO FINAL */
+
+
 .form-error-message {
-  color: #c62828; /* Vermelho escuro */
-  background-color: #ffebee; /* Vermelho claro */
+  color: #c62828;
+  background-color: #ffebee; 
   border: 1px solid #c62828;
   border-radius: 6px;
   padding: 10px;

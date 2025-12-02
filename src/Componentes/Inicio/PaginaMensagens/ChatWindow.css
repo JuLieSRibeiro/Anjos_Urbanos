@@ -1,16 +1,13 @@
-/* ChatWindow.css */
-
 .chat-window {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* Cabeçalho do chat (com nome) */
 .chat-header {
   padding: 15px 20px;
   border-bottom: 1px solid #EAEAEA;
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #ffffff; 
   display: flex;
   align-items: center;
   gap: 15px;
@@ -30,7 +27,6 @@
   color: #4A3F3B;
 }
 
-/* Placeholder se nenhum chat estiver selecionado */
 .no-chat-selected {
   flex-grow: 1;
   display: flex;
@@ -40,17 +36,15 @@
   font-size: 1.1rem;
 }
 
-/* Área onde as mensagens aparecem */
 .message-list {
-  flex-grow: 1; /* Ocupa todo o espaço disponível */
-  overflow-y: auto; /* Permite scroll */
+  flex-grow: 1; 
+  overflow-y: auto; 
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Balão de mensagem individual */
 .message-bubble {
   padding: 10px 15px;
   border-radius: 12px;
@@ -59,23 +53,20 @@
   font-size: 0.95rem;
 }
 
-/* Mensagem recebida (cinza) */
 .message-received {
-  background-color: #F0F0F0; /* Cinza-neutro */
+  background-color: #F0F0F0; 
   color: #4A3F3B;
-  align-self: flex-start; /* Alinha à esquerda */
-  border-bottom-left-radius: 0; /* Estilo de balão */
+  align-self: flex-start; 
+  border-bottom-left-radius: 0; 
 }
 
-/* Mensagem enviada (cor de ação) */
 .message-sent {
-  background-color: #C69C8D; /* Cor Terracota */
+  background-color: #C69C8D; 
   color: #ffffff;
-  align-self: flex-end; /* Alinha à direita */
-  border-bottom-right-radius: 0; /* Estilo de balão */
+  align-self: flex-end; 
+  border-bottom-right-radius: 0; 
 }
 
-/* Rodapé com a caixa de envio */
 .message-input-form {
   display: flex;
   padding: 15px;
@@ -94,7 +85,7 @@
 }
 
 .message-send-button {
-  background-color: #C69C8D; /* Cor Terracota */
+  background-color: #C69C8D; 
   color: white;
   border: none;
   border-radius: 6px;

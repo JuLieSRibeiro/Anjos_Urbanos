@@ -1,6 +1,3 @@
-/* PHome.css */
-
-/* Define a cor de fundo para a página inteira */
 body, html {
   margin: 0;
   padding: 0;
@@ -24,7 +21,6 @@ body, html {
   width: 100%;
 }
 
-/* === ESTILO DA LOGO ATUALIZADO === */
 .logo-img {
   max-width: 100%;
   height: 60px;
@@ -32,8 +28,6 @@ body, html {
   object-fit: cover;
   margin-left:-50px;
 }
-/* === FIM DA ATUALIZAÇÃO === */
-
 
 .home-header nav {
   display: flex;
@@ -110,7 +104,6 @@ body, html {
   line-height: 1.5;
 }
 
-/*imagem de propaganda */
 .home-image-content {
   flex: 1; 
   display: flex;

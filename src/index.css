@@ -1,5 +1,3 @@
-/* index.css */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,15 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* * NOSSAS NOVAS REGRAS GLOBAIS
-   * Isto vai remover o gradiente rosa/pêssego
-  */
-  background-color: #FBF9F7;  /* O fundo Creme-Suave */
-  color: #4A3F3B;           /* O texto Marrom-Escuro */
+  background-color: #FBF9F7; 
+  color: #4A3F3B;          
 }
 
-/* Reseta outros estilos que possam estar no seu CSS antigo */
 * {
   box-sizing: border-box;
 }

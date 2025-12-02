@@ -1,11 +1,8 @@
-/* ConversationList.css */
-
 .conversation-list {
   display: flex;
   flex-direction: column;
 }
 
-/* Título da coluna */
 .conversation-list-header {
   padding: 20px;
   border-bottom: 1px solid #EAEAEA;
@@ -17,7 +14,6 @@
   color: #4A3F3B;
 }
 
-/* Item individual da conversa */
 .conversation-item {
   display: flex;
   align-items: center;
@@ -29,13 +25,12 @@
 }
 
 .conversation-item:hover {
-  background-color: #FBF9F7; /* Fundo creme suave */
+  background-color: #FBF9F7; 
 }
 
-/* Estilo do item quando está selecionado */
 .conversation-item.active {
-  background-color: #F8F0EE; /* Fundo terracota claro */
-  border-right: 3px solid #C69C8D; /* Borda terracota */
+  background-color: #F8F0EE; 
+  border-right: 3px solid #C69C8D;
 }
 
 .conversation-avatar {
@@ -47,7 +42,7 @@
 }
 
 .conversation-details {
-  overflow: hidden; /* Impede o texto de vazar */
+  overflow: hidden; 
 }
 
 .conversation-name {
@@ -61,7 +56,7 @@
   margin: 0;
   font-size: 0.9rem;
   color: #777;
-  white-space: nowrap; /* Impede quebra de linha */
+  white-space: nowrap; 
   overflow: hidden;
-  text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+  text-overflow: ellipsis;
 }

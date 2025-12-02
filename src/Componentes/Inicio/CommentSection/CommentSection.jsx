@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
 import './CommentSection.css';
 
-// aqui vai ter duas functions importantes 
 function Comment({ author, text, avatar, likeCount, isLiked, onLike }) {
   return (
     <div className="comment">
-      {/* usa foto*/}
       <img src={avatar} alt="avatar" className="comment-avatar" />
-      <div className="comment-content">{/* o conteudo do comentario*/}
+      <div className="comment-content">
         <p className="comment-author">{author}</p>
         <p className="comment-text">{text}</p>
-        <div className="comment-actions">{/* o like*/}
+        <div className="comment-actions">
           <button 
             className={`comment-like-button ${isLiked ? 'liked' : ''}`}
             onClick={onLike}
           >
-            {isLiked ? 'Curtido' : 'Curtir'}{/* verifica e mostra a contagem de curtidas nos comentários*/}
+            {isLiked ? 'Curtido' : 'Curtir'}
           </button>
           {likeCount > 0 && (
             <span className="comment-like-count">

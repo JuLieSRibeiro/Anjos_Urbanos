@@ -1,5 +1,3 @@
-/* CommentSection.css */
-
 .comment-section {
   background-color: #FBF9F7; 
   padding: 20px;
@@ -18,14 +16,12 @@
   font-weight: 600;
 }
 
-
 .comment-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-bottom: 20px;
 }
-
 
 .comment {
   display: flex;
@@ -110,17 +106,14 @@
   transition: color 0.2s ease;
 }
 
-
 .comment-like-button.liked {
   color: #C69C8D; 
 }
-
 
 .comment-like-count {
   font-size: 0.8rem;
   color: #777;
 }
-
 
 .comment-like-count::before {
   content: '👍';

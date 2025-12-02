@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './ChatWindow.css';
 
-// DADOS ATUALIZADOS COM FOTOS
 const allMessagesData = {
   1: { 
     name: "Roberto Santos",
-    avatar: "https://picsum.photos/seed/roberto/40/40", // <-- FOTO
+    avatar: "https://picsum.photos/seed/roberto/40/40", 
     messages: [
       { id: 'a', sender: 'other', text: 'Roberto, me manda seu contato. Consigo uma cesta básica para você.' },
       { id: 'b', sender: 'me', text: 'Sério? Muito obrigado! Meu número é...' },
@@ -14,7 +13,7 @@ const allMessagesData = {
   },
   2: { 
     name: "Angela Rodrigues",
-    avatar: "https://picsum.photos/seed/angela/40/40", // <-- FOTO
+    avatar: "https://picsum.photos/seed/angela/40/40",
     messages: [
       { id: 'd', sender: 'me', text: 'Olá Angela, vi seu post sobre o material escolar. Como posso ajudar?' },
       { id: 'e', sender: 'other', text: 'Sim, por favor! O material escolar é para o meu filho de 8 anos...' },
@@ -22,14 +21,13 @@ const allMessagesData = {
   },
   3: { 
     name: "João Pedro",
-    avatar: "https://picsum.photos/seed/joao/40/40", // <-- FOTO
+    avatar: "https://picsum.photos/seed/joao/40/40", 
     messages: [
       { id: 'f', sender: 'other', text: 'Você pode buscar as roupas amanhã à tarde?' },
     ]
   }
 };
 
-// Componente "ChatWindow"
 function ChatWindow({ conversationId }) {
 
   const [messages, setMessages] = useState([]);

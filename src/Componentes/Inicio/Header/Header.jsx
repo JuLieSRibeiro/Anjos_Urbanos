@@ -4,7 +4,7 @@ import { Link, useNavigate }
 from 'react-router-dom';
 
 function Header() {
-  const navigate = useNavigate();//nesse trabalho a gnt tá usando link para navegação e usenavegate pra logout
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     console.log("Usuário deslogado.");
@@ -14,7 +14,6 @@ function Header() {
   return (
     <header className="header">
       
-    
       <Link to="/feed" className="header-logo-link">
         <img 
           src="/logo-anjos-urbanos.png" 
@@ -23,7 +22,6 @@ function Header() {
         />
       </Link>
       
-
       <nav className="header-nav">
         
         <Link to="/feed" className="nav-link">

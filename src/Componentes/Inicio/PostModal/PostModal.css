@@ -1,4 +1,3 @@
-/* PostModal.css */
 
 .modal-overlay {
   position: fixed;
@@ -19,10 +18,8 @@
   width: 100%;
   max-width: 550px;
   position: relative;
-  
-  /* Novo design flutuante */
-  border-radius: 8px; /* Arredondado */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .modal-header {
@@ -75,7 +72,7 @@
   padding: 10px;
   border: 1px solid #EAEAEA;
   background-color: #FBF9F7; 
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
   font-size: 1rem;
   font-family: inherit;
   resize: vertical;
@@ -86,7 +83,7 @@
   padding: 10px;
   border: 1px solid #EAEAEA;
   background-color: #FBF9F7; 
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
   font-size: 1rem;
 }
 
@@ -96,10 +93,10 @@
 }
 
 .modal-publish-button {
-  background-color: #C69C8D; /* Cor Terracota */
+  background-color: #C69C8D; 
   color: white;
   border: none;
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
   padding: 12px 25px;
   cursor: pointer;
   font-weight: bold;

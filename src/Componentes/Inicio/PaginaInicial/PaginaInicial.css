@@ -8,7 +8,6 @@
   margin: 0 auto; 
 }
 
-
 .coluna-central {
   flex: 2; 
   display: flex;
@@ -16,7 +15,6 @@
   gap: 20px;
   max-width: 650px; 
 }
-
 
 .coluna-esquerda,
 .coluna-direita {
@@ -27,15 +25,12 @@
   top: 90px; 
 }
 
-
 @media (max-width: 900px) {
   
- 
   .coluna-esquerda,
   .coluna-direita {
     display: none;
   }
-
   
   .coluna-central {
     flex: 1;

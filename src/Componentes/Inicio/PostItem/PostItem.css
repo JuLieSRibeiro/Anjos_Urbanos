@@ -1,19 +1,14 @@
-/* PostItem.css */
-
 .post-card {
   background: #ffffff; 
   padding: 20px;
   margin-bottom: 0; 
   box-sizing: border-box;
-  width: 100%; /* Ocupa 100% da coluna-central */
-
-  /* Novo design flutuante */
-  border-radius: 8px; /* Cantos arredondados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  width: 100%; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
   border: none; 
 }
 
-/* Badge de Tipo (Pedido ou Oferta) */
 .post-type-badge {
   display: inline-block;
   padding: 4px 10px;
@@ -22,22 +17,19 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 12px;
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
 }
 
-/* Cor para "Pedido" (usa a paleta Terracota) */
 .post-type-pedido {
-  background-color: #F8F0EE; /* Terracota claro */
-  color: #8E6E61; /* Terracota escuro */
+  background-color: #F8F0EE; 
+  color: #8E6E61; 
 }
 
-/* Cor para "Oferta" (usa a paleta Verde-Menta) */
 .post-type-oferta {
-  background-color: #EBF5F3; /* Verde-Menta claro */
-  color: #5A8A80; /* Verde-Menta escuro */
+  background-color: #EBF5F3; 
+  color: #5A8A80; 
 }
 
-/* Tags (#Alimentos) */
 .post-tags {
   display: flex;
   gap: 10px;
@@ -45,14 +37,13 @@
 }
 
 .tag-pill {
-  background: #F0F0F0; /* Fundo cinza-neutro */
+  background: #F0F0F0; 
   color: #777; 
   padding: 5px 12px;
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
   font-size: 14px;
 }
 
-/* FOTO + NOME + CIDADE */
 .post-header {
   display: flex;
   align-items: center;
@@ -81,7 +72,6 @@
   color: #777; 
 }
 
-/* TEXTO */
 .mensagem {
   font-size: 14px;
   margin: 10px 0 25px;
@@ -89,17 +79,16 @@
   color: #4A3F3B; 
 }
 
-/* BOTÃO */
 .post-actions {
   text-align: right;
 }
 
 .btn-comentar {
   background: transparent; 
-  color: #C69C8D; /* Cor Terracota */
-  border: 1px solid #C69C8D; /* Borda Terracota */
+  color: #C69C8D; 
+  border: 1px solid #C69C8D; 
   padding: 6px 16px;
-  border-radius: 6px; /* Arredondado */
+  border-radius: 6px; 
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -107,5 +96,5 @@
 }
 
 .btn-comentar:hover {
-  background: #F8F0EE; /* Fundo terracota claro */
+  background: #F8F0EE; 
 }

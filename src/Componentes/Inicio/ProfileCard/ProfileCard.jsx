@@ -5,7 +5,6 @@ function ProfileCard() {
   return (
     <div className="profile-card">
       <div className="profile-image">
-        {/* FOTO ATUALIZADA (Sua foto de perfil) */}
         <img src="https://picsum.photos/seed/marcela/90/90" alt="Foto de perfil" />
       </div>
       <div className="profile-info">

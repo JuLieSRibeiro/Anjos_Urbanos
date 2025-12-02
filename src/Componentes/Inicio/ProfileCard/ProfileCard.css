@@ -1,12 +1,10 @@
-/* ProfileCard.css */
 
 .profile-card {
   width: 280px;
   background: #ffffff; 
 
-  /* Novo design flutuante */
-  border-radius: 8px; /* Arredondado */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
   border: none; 
   
   position: relative;
